@@ -42,6 +42,8 @@ set_target_properties(autoview PROPERTIES
 )
 
 add_subdirectory(autoview/commsgs)
+add_subdirectory(autoview/plugins)
+add_subdirectory(autoview/rendering)
 
 target_include_directories(autoview PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}

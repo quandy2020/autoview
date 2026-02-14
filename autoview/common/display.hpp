@@ -21,7 +21,7 @@
 #include <QIcon>  
 #include <QSet>  
 
-#include "autoview/time/time.hpp"
+#include "autolink/time.hpp"
 
 #include "autoview/common/properties/bool_property.hpp"
 #include "autoview/common/properties/status_property.hpp"
@@ -38,7 +38,7 @@ class SceneNode;
 // Required, in combination with `qRegisterMetaType<rclcpp::Time>` in the cpp
 // file, so that this type can be used with a Qt signal.
 // See: http://doc.qt.io/qt-5/qmetatype.html#qRegisterMetaType-1
-Q_DECLARE_METATYPE(autoview::Time)
+Q_DECLARE_METATYPE(autolink::Time)
 
 namespace autoview {
 namespace common {
@@ -224,7 +224,7 @@ public:
   void setName(const QString& name) final;  // Overridden from Property.
 
   /// Emit a time signal that other Displays can synchronize to.
-  void emitTimeSignal(autoview::Time time);
+  void emitTimeSignal(autolink::Time time);
 
   virtual properties::Property* findProperty(const QString& name);
 
@@ -232,10 +232,10 @@ public:
   bool updateFrame(const std::string& frame);
 
   /// Get transform to the frame at the given time and update the scene node. True on success.
-  bool updateFrame(const std::string& frame, autoview::Time time);
+  bool updateFrame(const std::string& frame, autolink::Time time);
 
 Q_SIGNALS:
-  void timeSignal(Display* display, autoview::Time time);
+  void timeSignal(Display* display, autolink::Time time);
 
 public Q_SLOTS:
   /// Enable or disable this Display.
