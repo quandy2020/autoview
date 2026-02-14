@@ -21,19 +21,7 @@ set(CMAKE_AUTOMOC ON)
 find_package(Qt5 REQUIRED COMPONENTS Widgets Core)
 find_package(Protobuf REQUIRED)
 
-set(AUTOVIEW_SOURCES
-  autoview/main.cpp
-  autoview/common/visualizer_app.cpp
-  autoview/common/config.cpp
-  autoview/common/visualization_manager.cpp
-  autoview/common/properties/property.cpp
-  autoview/common/properties/float_edit.cpp
-  autoview/common/properties/property_tree_model.cpp
-  autoview/common/visualizer_app.hpp
-  autoview/common/properties/property.hpp
-  autoview/common/properties/float_edit.hpp
-  autoview/common/properties/property_tree_model.hpp
-)
+set(AUTOVIEW_SOURCES autoview/main.cpp)
 
 add_executable(autoview ${AUTOVIEW_SOURCES})
 set_target_properties(autoview PROPERTIES
@@ -41,6 +29,7 @@ set_target_properties(autoview PROPERTIES
   RUNTIME_OUTPUT_NAME "autoview"
 )
 
+add_subdirectory(autoview/common)
 add_subdirectory(autoview/commsgs)
 add_subdirectory(autoview/plugins)
 add_subdirectory(autoview/rendering)
