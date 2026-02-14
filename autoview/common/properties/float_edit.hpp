@@ -14,16 +14,32 @@
  * limitations under the License.
  *****************************************************************************/
 
-#include <memory>
-#include <string>
-#include <vector>
+#pragma once
 
-#include <QApplication> 
+#include "autoview/common/properties/property.hpp"
 
-#include "autoview/common/visualizer_app.hpp"
+#include <QLineEdit>
 
-int main(int argc, char *argv[]) {
-    QApplication app(argc, argv);
-    autoview::common::VisualizerApp visualizer_app;
-    return app.exec();
-}
+namespace autoview {
+namespace common {
+namespace properties {
+
+/// Line edit widget for float values used in property editors.
+class FloatEdit : public QLineEdit
+{
+  Q_OBJECT
+public:
+  explicit FloatEdit(QWidget* parent = nullptr);
+  float getValue() const;
+  void setValue(float new_value);
+
+public Q_SLOTS:
+  void updateValue();
+
+private:
+  float value_ = 0.0f;
+};
+
+}  // namespace properties
+}  // namespace common
+}  // namespace autoview

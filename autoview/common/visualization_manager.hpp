@@ -14,16 +14,4 @@
  * limitations under the License.
  *****************************************************************************/
 
-#include <memory>
-#include <string>
-#include <vector>
-
-#include <QApplication> 
-
-#include "autoview/common/visualizer_app.hpp"
-
-int main(int argc, char *argv[]) {
-    QApplication app(argc, argv);
-    autoview::common::VisualizerApp visualizer_app;
-    return app.exec();
-}
+#pragma once

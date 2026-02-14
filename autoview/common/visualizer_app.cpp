@@ -14,16 +14,30 @@
  * limitations under the License.
  *****************************************************************************/
 
-#include <memory>
-#include <string>
-#include <vector>
-
-#include <QApplication> 
 
 #include "autoview/common/visualizer_app.hpp"
 
-int main(int argc, char *argv[]) {
-    QApplication app(argc, argv);
-    autoview::common::VisualizerApp visualizer_app;
-    return app.exec();
-}
+#include <iostream>
+#include <memory>
+#include <utility>
+
+
+#include <QApplication>  // NOLINT: cpplint is unable to handle the include order here
+#include <QCommandLineParser>  // NOLINT: cpplint is unable to handle the include order here
+#include <QCommandLineOption>  // NOLINT: cpplint is unable to handle the include order here
+#include <QTimer>  // NOLINT: cpplint is unable to handle the include order here
+
+// #include "rviz_common/interaction/selection_manager.hpp"
+// #include "rviz_common/logging.hpp"
+// #include "rviz_rendering/ogre_logging.hpp"
+
+// #include "rviz_common/visualization_frame.hpp"
+// #include "rviz_common/visualization_manager.hpp"
+
+namespace autoview {
+namespace common {
+
+
+
+}  // namespace common
+}  // namespace autoview

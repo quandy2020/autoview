@@ -14,16 +14,46 @@
  * limitations under the License.
  *****************************************************************************/
 
-#include <memory>
-#include <string>
-#include <vector>
+#pragma once
 
-#include <QApplication> 
+#include <QObject>
 
-#include "autoview/common/visualizer_app.hpp"
+class QTimer;
 
-int main(int argc, char *argv[]) {
-    QApplication app(argc, argv);
-    autoview::common::VisualizerApp visualizer_app;
-    return app.exec();
+namespace Ogre
+{
+class Light;
+class Root;
 }
+
+namespace autoview {
+namespace common {
+
+namespace properties
+{
+
+class ColorProperty;
+class IntProperty;
+class Property;
+class PropertyTreeModel;
+class StatusList;
+class TfFrameProperty;
+
+}  // namespace properties
+
+class Display;
+class Tool;
+class OgreRenderQueueClearer;
+
+class VisualizationManagerPrivate;
+
+class VisualizerApp : public QObject
+{
+  Q_OBJECT
+public:
+  explicit VisualizerApp(QObject* parent = nullptr) : QObject(parent) {}
+  ~VisualizerApp() override = default;
+};
+
+}  // namespace common
+}  // namespace autoview
