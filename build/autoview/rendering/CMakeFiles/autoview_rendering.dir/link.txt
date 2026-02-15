@@ -1,0 +1,2 @@
+/usr/bin/ar qc libautoview_rendering.a CMakeFiles/autoview_rendering.dir/autoview_rendering_autogen/mocs_compilation.cpp.o CMakeFiles/autoview_rendering.dir/render_window.cpp.o
+/usr/bin/ranlib libautoview_rendering.a

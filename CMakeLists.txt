@@ -18,8 +18,13 @@ project(autoview VERSION 0.0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTOMOC ON)
 
-find_package(Qt5 REQUIRED COMPONENTS Widgets Core)
+# Use custom find modules from cmake/
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+
+find_package(Qt REQUIRED COMPONENTS Widgets Core)
 find_package(Protobuf REQUIRED)
+find_package(Ogre REQUIRED)
+# find_package(Autolink REQUIRED)
 
 set(AUTOVIEW_SOURCES autoview/main.cpp)
 
@@ -38,8 +43,7 @@ target_include_directories(autoview PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}
   ${CMAKE_BINARY_DIR}/commsgs
 )
-target_link_libraries(autoview PRIVATE Qt5::Widgets autoview_commsgs)
-
+target_link_libraries(autoview PRIVATE Qt::Widgets Qt::Core autoview_commsgs)
 
 install(TARGETS autoview
   RUNTIME DESTINATION bin

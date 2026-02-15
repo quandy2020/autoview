@@ -1,0 +1,2 @@
+/usr/bin/ar qc libautoview_common.a CMakeFiles/autoview_common.dir/autoview_common_autogen/mocs_compilation.cpp.o CMakeFiles/autoview_common.dir/visualizer_app.cpp.o CMakeFiles/autoview_common.dir/config.cpp.o CMakeFiles/autoview_common.dir/visualization_manager.cpp.o CMakeFiles/autoview_common.dir/properties/bool_property.cpp.o CMakeFiles/autoview_common.dir/properties/property.cpp.o CMakeFiles/autoview_common.dir/properties/float_edit.cpp.o CMakeFiles/autoview_common.dir/properties/property_tree_model.cpp.o
+/usr/bin/ranlib libautoview_common.a
