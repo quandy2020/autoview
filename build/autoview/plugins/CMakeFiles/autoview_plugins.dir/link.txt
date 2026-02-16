@@ -1,2 +1,0 @@
-/usr/bin/ar qc libautoview_plugins.a CMakeFiles/autoview_plugins.dir/autoview_plugins_autogen/mocs_compilation.cpp.o CMakeFiles/autoview_plugins.dir/view_controllers/follower/third_person_follower_view_controller.cpp.o CMakeFiles/autoview_plugins.dir/view_controllers/fps/fps_view_controller.cpp.o CMakeFiles/autoview_plugins.dir/transformation/tf_wrapper.cpp.o
-/usr/bin/ranlib libautoview_plugins.a
