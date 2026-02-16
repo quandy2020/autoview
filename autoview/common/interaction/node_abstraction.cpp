@@ -30,17 +30,18 @@ namespace common {
 namespace interaction {
 
 NodeAbstraction::NodeAbstraction(const std::string & node_name)
-: raw_node_(autolink::Node::make_shared(node_name))
+: raw_node_(autolink::CreateNode(node_name))
 {}
 
 std::string NodeAbstraction::get_node_name() const
 {
-  return raw_node_->get_name();
+  return raw_node_->Name();
 }
 
 std::map<std::string, std::vector<std::string>> NodeAbstraction::get_topic_names_and_types() const
 {
-  return raw_node_->get_topic_names_and_types();
+  // autolink Node 暂无对应 API，先返回空；后续可从 topology 等获取
+  return {};
 }
 
 }  // namespace interaction

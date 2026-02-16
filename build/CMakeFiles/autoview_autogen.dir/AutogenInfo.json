@@ -82,6 +82,9 @@
 		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake",
 		"/workspace/autonomy/src/autoview/cmake/FindOgre.cmake",
 		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake",
+		"/workspace/autonomy/src/autoview/cmake/FindAutolink.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
 		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/workspace/autonomy/src/autoview",

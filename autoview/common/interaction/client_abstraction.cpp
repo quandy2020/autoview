@@ -38,7 +38,7 @@
    if (anonymous_name) {
      throw std::runtime_error("'anonymous_name' feature not implemented");
    }
-   autolink::init(argc, argv);
+   autolink::Init(argc > 0 ? argv[0] : "autoview", "");
    if (node_ && node_->get_node_name() == final_name) {
      throw std::runtime_error("Node with name " + final_name + " already exists.");
    }
@@ -48,12 +48,12 @@
  
  bool ClientAbstraction::ok()
  {
-   return autolink::ok() && node_;
+   return autolink::OK() && node_;
  }
  
 void ClientAbstraction::shutdown()
 {
-    autolink::shutdown();
+  autolink::AsyncShutdown();
 }
  
 }  // namespace interaction

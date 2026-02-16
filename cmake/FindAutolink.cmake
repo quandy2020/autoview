@@ -11,6 +11,7 @@
 
 include(FindPackageHandleStandardArgs)
 
+# 仅使用 /usr/local 下的 autolink（或通过 AUTOLINK_ROOT 指定），不使用同级源码目录
 set(_AUTOLINK_SEARCH_ROOTS "")
 if(DEFINED ENV{AUTOLINK_ROOT})
   list(APPEND _AUTOLINK_SEARCH_ROOTS "$ENV{AUTOLINK_ROOT}")
@@ -18,11 +19,11 @@ endif()
 if(AUTOLINK_ROOT)
   list(APPEND _AUTOLINK_SEARCH_ROOTS "${AUTOLINK_ROOT}")
 endif()
-# Sibling of autoview: autonomy/src/autolink when this file is in autonomy/src/autoview/cmake
-get_filename_component(_AUTOVIEW_DIR "${CMAKE_CURRENT_SOURCE_DIR}" DIRECTORY)
-get_filename_component(_SRC_DIR "${_AUTOVIEW_DIR}" DIRECTORY)
-if(EXISTS "${_SRC_DIR}/autolink/autolink/autolink.hpp")
-  list(APPEND _AUTOLINK_SEARCH_ROOTS "${_SRC_DIR}/autolink")
+if(NOT _AUTOLINK_SEARCH_ROOTS)
+  # 默认仅使用安装前缀 /usr/local
+  if(EXISTS "/usr/local/include/autolink/autolink.hpp")
+    list(APPEND _AUTOLINK_SEARCH_ROOTS "/usr/local/include")
+  endif()
 endif()
 
 set(AUTOLINK_FOUND FALSE)
@@ -44,11 +45,17 @@ endforeach()
 if(AUTOLINK_INCLUDE_DIRS)
   set(_BUILD_DIR "${AUTOLINK_BUILD_DIR}")
   if(NOT _BUILD_DIR)
-    set(_BUILD_DIR "${_AUTOLINK_ROOT}/build")
+    # 安装到 /usr/local 时头文件在 include，库在 lib
+    if(_AUTOLINK_ROOT MATCHES "/include$")
+      get_filename_component(_PARENT "${_AUTOLINK_ROOT}" DIRECTORY)
+      set(_BUILD_DIR "${_PARENT}/lib")
+    else()
+      set(_BUILD_DIR "${_AUTOLINK_ROOT}/build/lib")
+    endif()
   endif()
   find_library(AUTOLINK_LIBRARY
     NAMES autolink
-    PATHS "${_BUILD_DIR}/lib" "${_BUILD_DIR}"
+    PATHS "${_BUILD_DIR}" "${_BUILD_DIR}/.."
     NO_DEFAULT_PATH
   )
   if(AUTOLINK_LIBRARY)
@@ -62,17 +69,39 @@ find_package_handle_standard_args(Autolink
   FOUND_VAR AUTOLINK_FOUND
 )
 
-if(Autolink_FOUND AND NOT TARGET Autolink::autolink)
-  add_library(Autolink::autolink SHARED IMPORTED)
+if(Autolink_FOUND)
+  set(_AUTOLINK_INTERFACE_INCLUDES "${AUTOLINK_INCLUDE_DIRS}")
+  # /usr/local 的 autolink 头文件会拉取 fastrtps/fastcdr，需把 ROS 下 FastDDS 相关 include 传给消费者
+  unset(_FastRTPS_HEADER_DIR CACHE)
+  unset(_FastCDR_HEADER_DIR CACHE)
+  find_path(_FastRTPS_HEADER_DIR "fastrtps/attributes/PublisherAttributes.h"
+    PATHS "/opt/ros/humble/include/fastrtps" "/opt/ros/jazzy/include/fastrtps" "/opt/ros/iron/include/fastrtps"
+          "/opt/ros/humble/include" "/opt/ros/jazzy/include" "/opt/ros/iron/include"
+          "/usr/local/include" "/usr/include"
+  )
+  find_path(_FastCDR_HEADER_DIR "fastcdr/Cdr.h"
+    PATHS "/opt/ros/humble/include/fastcdr" "/opt/ros/jazzy/include/fastcdr" "/opt/ros/iron/include/fastcdr"
+          "/opt/ros/humble/include" "/opt/ros/jazzy/include" "/opt/ros/iron/include"
+          "/usr/local/include" "/usr/include"
+  )
+  if(_FastRTPS_HEADER_DIR)
+    list(APPEND _AUTOLINK_INTERFACE_INCLUDES "${_FastRTPS_HEADER_DIR}")
+  endif()
+  if(_FastCDR_HEADER_DIR)
+    list(APPEND _AUTOLINK_INTERFACE_INCLUDES "${_FastCDR_HEADER_DIR}")
+  endif()
+  if(NOT TARGET Autolink::autolink)
+    add_library(Autolink::autolink SHARED IMPORTED)
+  endif()
   set_target_properties(Autolink::autolink PROPERTIES
     IMPORTED_LOCATION "${AUTOLINK_LIBRARIES}"
-    INTERFACE_INCLUDE_DIRECTORIES "${AUTOLINK_INCLUDE_DIRS}"
+    INTERFACE_INCLUDE_DIRECTORIES "${_AUTOLINK_INTERFACE_INCLUDES}"
   )
+  unset(_AUTOLINK_INTERFACE_INCLUDES)
 endif()
 
 unset(_AUTOLINK_SEARCH_ROOTS)
-unset(_AUTOVIEW_DIR)
-unset(_SRC_DIR)
 unset(_INC)
 unset(_ROOT)
 unset(_BUILD_DIR)
+unset(_PARENT)

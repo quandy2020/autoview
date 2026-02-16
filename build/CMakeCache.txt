@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Path to a library.
+AUTOLINK_LIBRARY:FILEPATH=/usr/local/lib/libautolink.so
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -243,6 +246,12 @@ Qt5_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5
 //The directory containing a CMake configuration file for Qt6.
 Qt6_DIR:PATH=Qt6_DIR-NOTFOUND
 
+//Path to a file.
+_FastCDR_HEADER_DIR:PATH=/opt/ros/humble/include/fastcdr
+
+//Path to a file.
+_FastRTPS_HEADER_DIR:PATH=/opt/ros/humble/include/fastrtps
+
 //Value Computed by CMake
 autoview_BINARY_DIR:STATIC=/workspace/autonomy/src/autoview/build
 
@@ -388,6 +397,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Autolink
+FIND_PACKAGE_MESSAGE_DETAILS_Autolink:INTERNAL=[/usr/local/include][/usr/local/lib/libautolink.so][v()]
 //Details about finding Ogre
 FIND_PACKAGE_MESSAGE_DETAILS_Ogre:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOgreMain.so][/usr/include/OGRE][v()]
 //Details about finding Protobuf

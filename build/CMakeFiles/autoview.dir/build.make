@@ -112,6 +112,7 @@ bin/autoview: autoview/common/libautoview_common.a
 bin/autoview: autoview/plugins/libautoview_plugins.a
 bin/autoview: autoview/rendering/libautoview_rendering.a
 bin/autoview: autoview/commsgs/libautoview_commsgs.a
+bin/autoview: /usr/local/lib/libautolink.so
 bin/autoview: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3
 bin/autoview: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3
 bin/autoview: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3

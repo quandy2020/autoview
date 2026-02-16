@@ -189,6 +189,30 @@ autoview_rendering_autogen/fast:
 	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering_autogen.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering_autogen.dir/build
 .PHONY : autoview_rendering_autogen/fast
 
+apply_visibility_bits.o: apply_visibility_bits.cpp.o
+.PHONY : apply_visibility_bits.o
+
+# target to build an object file
+apply_visibility_bits.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/apply_visibility_bits.cpp.o
+.PHONY : apply_visibility_bits.cpp.o
+
+apply_visibility_bits.i: apply_visibility_bits.cpp.i
+.PHONY : apply_visibility_bits.i
+
+# target to preprocess a source file
+apply_visibility_bits.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/apply_visibility_bits.cpp.i
+.PHONY : apply_visibility_bits.cpp.i
+
+apply_visibility_bits.s: apply_visibility_bits.cpp.s
+.PHONY : apply_visibility_bits.s
+
+# target to generate assembly for a file
+apply_visibility_bits.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/apply_visibility_bits.cpp.s
+.PHONY : apply_visibility_bits.cpp.s
+
 autoview_rendering_autogen/mocs_compilation.o: autoview_rendering_autogen/mocs_compilation.cpp.o
 .PHONY : autoview_rendering_autogen/mocs_compilation.o
 
@@ -212,6 +236,582 @@ autoview_rendering_autogen/mocs_compilation.s: autoview_rendering_autogen/mocs_c
 autoview_rendering_autogen/mocs_compilation.cpp.s:
 	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/autoview_rendering_autogen/mocs_compilation.cpp.s
 .PHONY : autoview_rendering_autogen/mocs_compilation.cpp.s
+
+aviz_rendering.o: aviz_rendering.cpp.o
+.PHONY : aviz_rendering.o
+
+# target to build an object file
+aviz_rendering.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/aviz_rendering.cpp.o
+.PHONY : aviz_rendering.cpp.o
+
+aviz_rendering.i: aviz_rendering.cpp.i
+.PHONY : aviz_rendering.i
+
+# target to preprocess a source file
+aviz_rendering.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/aviz_rendering.cpp.i
+.PHONY : aviz_rendering.cpp.i
+
+aviz_rendering.s: aviz_rendering.cpp.s
+.PHONY : aviz_rendering.s
+
+# target to generate assembly for a file
+aviz_rendering.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/aviz_rendering.cpp.s
+.PHONY : aviz_rendering.cpp.s
+
+custom_parameter_indices.o: custom_parameter_indices.cpp.o
+.PHONY : custom_parameter_indices.o
+
+# target to build an object file
+custom_parameter_indices.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/custom_parameter_indices.cpp.o
+.PHONY : custom_parameter_indices.cpp.o
+
+custom_parameter_indices.i: custom_parameter_indices.cpp.i
+.PHONY : custom_parameter_indices.i
+
+# target to preprocess a source file
+custom_parameter_indices.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/custom_parameter_indices.cpp.i
+.PHONY : custom_parameter_indices.cpp.i
+
+custom_parameter_indices.s: custom_parameter_indices.cpp.s
+.PHONY : custom_parameter_indices.s
+
+# target to generate assembly for a file
+custom_parameter_indices.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/custom_parameter_indices.cpp.s
+.PHONY : custom_parameter_indices.cpp.s
+
+geometry.o: geometry.cpp.o
+.PHONY : geometry.o
+
+# target to build an object file
+geometry.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/geometry.cpp.o
+.PHONY : geometry.cpp.o
+
+geometry.i: geometry.cpp.i
+.PHONY : geometry.i
+
+# target to preprocess a source file
+geometry.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/geometry.cpp.i
+.PHONY : geometry.cpp.i
+
+geometry.s: geometry.cpp.s
+.PHONY : geometry.s
+
+# target to generate assembly for a file
+geometry.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/geometry.cpp.s
+.PHONY : geometry.cpp.s
+
+logging.o: logging.cpp.o
+.PHONY : logging.o
+
+# target to build an object file
+logging.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/logging.cpp.o
+.PHONY : logging.cpp.o
+
+logging.i: logging.cpp.i
+.PHONY : logging.i
+
+# target to preprocess a source file
+logging.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/logging.cpp.i
+.PHONY : logging.cpp.i
+
+logging.s: logging.cpp.s
+.PHONY : logging.s
+
+# target to generate assembly for a file
+logging.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/logging.cpp.s
+.PHONY : logging.cpp.s
+
+logging_handler.o: logging_handler.cpp.o
+.PHONY : logging_handler.o
+
+# target to build an object file
+logging_handler.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/logging_handler.cpp.o
+.PHONY : logging_handler.cpp.o
+
+logging_handler.i: logging_handler.cpp.i
+.PHONY : logging_handler.i
+
+# target to preprocess a source file
+logging_handler.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/logging_handler.cpp.i
+.PHONY : logging_handler.cpp.i
+
+logging_handler.s: logging_handler.cpp.s
+.PHONY : logging_handler.s
+
+# target to generate assembly for a file
+logging_handler.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/logging_handler.cpp.s
+.PHONY : logging_handler.cpp.s
+
+material_manager.o: material_manager.cpp.o
+.PHONY : material_manager.o
+
+# target to build an object file
+material_manager.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/material_manager.cpp.o
+.PHONY : material_manager.cpp.o
+
+material_manager.i: material_manager.cpp.i
+.PHONY : material_manager.i
+
+# target to preprocess a source file
+material_manager.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/material_manager.cpp.i
+.PHONY : material_manager.cpp.i
+
+material_manager.s: material_manager.cpp.s
+.PHONY : material_manager.s
+
+# target to generate assembly for a file
+material_manager.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/material_manager.cpp.s
+.PHONY : material_manager.cpp.s
+
+mesh_loader.o: mesh_loader.cpp.o
+.PHONY : mesh_loader.o
+
+# target to build an object file
+mesh_loader.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/mesh_loader.cpp.o
+.PHONY : mesh_loader.cpp.o
+
+mesh_loader.i: mesh_loader.cpp.i
+.PHONY : mesh_loader.i
+
+# target to preprocess a source file
+mesh_loader.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/mesh_loader.cpp.i
+.PHONY : mesh_loader.cpp.i
+
+mesh_loader.s: mesh_loader.cpp.s
+.PHONY : mesh_loader.s
+
+# target to generate assembly for a file
+mesh_loader.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/mesh_loader.cpp.s
+.PHONY : mesh_loader.cpp.s
+
+objects/arrow.o: objects/arrow.cpp.o
+.PHONY : objects/arrow.o
+
+# target to build an object file
+objects/arrow.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/arrow.cpp.o
+.PHONY : objects/arrow.cpp.o
+
+objects/arrow.i: objects/arrow.cpp.i
+.PHONY : objects/arrow.i
+
+# target to preprocess a source file
+objects/arrow.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/arrow.cpp.i
+.PHONY : objects/arrow.cpp.i
+
+objects/arrow.s: objects/arrow.cpp.s
+.PHONY : objects/arrow.s
+
+# target to generate assembly for a file
+objects/arrow.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/arrow.cpp.s
+.PHONY : objects/arrow.cpp.s
+
+objects/axes.o: objects/axes.cpp.o
+.PHONY : objects/axes.o
+
+# target to build an object file
+objects/axes.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/axes.cpp.o
+.PHONY : objects/axes.cpp.o
+
+objects/axes.i: objects/axes.cpp.i
+.PHONY : objects/axes.i
+
+# target to preprocess a source file
+objects/axes.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/axes.cpp.i
+.PHONY : objects/axes.cpp.i
+
+objects/axes.s: objects/axes.cpp.s
+.PHONY : objects/axes.s
+
+# target to generate assembly for a file
+objects/axes.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/axes.cpp.s
+.PHONY : objects/axes.cpp.s
+
+objects/billboard_line.o: objects/billboard_line.cpp.o
+.PHONY : objects/billboard_line.o
+
+# target to build an object file
+objects/billboard_line.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/billboard_line.cpp.o
+.PHONY : objects/billboard_line.cpp.o
+
+objects/billboard_line.i: objects/billboard_line.cpp.i
+.PHONY : objects/billboard_line.i
+
+# target to preprocess a source file
+objects/billboard_line.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/billboard_line.cpp.i
+.PHONY : objects/billboard_line.cpp.i
+
+objects/billboard_line.s: objects/billboard_line.cpp.s
+.PHONY : objects/billboard_line.s
+
+# target to generate assembly for a file
+objects/billboard_line.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/billboard_line.cpp.s
+.PHONY : objects/billboard_line.cpp.s
+
+objects/covariance_visual.o: objects/covariance_visual.cpp.o
+.PHONY : objects/covariance_visual.o
+
+# target to build an object file
+objects/covariance_visual.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/covariance_visual.cpp.o
+.PHONY : objects/covariance_visual.cpp.o
+
+objects/covariance_visual.i: objects/covariance_visual.cpp.i
+.PHONY : objects/covariance_visual.i
+
+# target to preprocess a source file
+objects/covariance_visual.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/covariance_visual.cpp.i
+.PHONY : objects/covariance_visual.cpp.i
+
+objects/covariance_visual.s: objects/covariance_visual.cpp.s
+.PHONY : objects/covariance_visual.s
+
+# target to generate assembly for a file
+objects/covariance_visual.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/covariance_visual.cpp.s
+.PHONY : objects/covariance_visual.cpp.s
+
+objects/effort_visual.o: objects/effort_visual.cpp.o
+.PHONY : objects/effort_visual.o
+
+# target to build an object file
+objects/effort_visual.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/effort_visual.cpp.o
+.PHONY : objects/effort_visual.cpp.o
+
+objects/effort_visual.i: objects/effort_visual.cpp.i
+.PHONY : objects/effort_visual.i
+
+# target to preprocess a source file
+objects/effort_visual.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/effort_visual.cpp.i
+.PHONY : objects/effort_visual.cpp.i
+
+objects/effort_visual.s: objects/effort_visual.cpp.s
+.PHONY : objects/effort_visual.s
+
+# target to generate assembly for a file
+objects/effort_visual.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/effort_visual.cpp.s
+.PHONY : objects/effort_visual.cpp.s
+
+objects/grid.o: objects/grid.cpp.o
+.PHONY : objects/grid.o
+
+# target to build an object file
+objects/grid.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/grid.cpp.o
+.PHONY : objects/grid.cpp.o
+
+objects/grid.i: objects/grid.cpp.i
+.PHONY : objects/grid.i
+
+# target to preprocess a source file
+objects/grid.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/grid.cpp.i
+.PHONY : objects/grid.cpp.i
+
+objects/grid.s: objects/grid.cpp.s
+.PHONY : objects/grid.s
+
+# target to generate assembly for a file
+objects/grid.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/grid.cpp.s
+.PHONY : objects/grid.cpp.s
+
+objects/line.o: objects/line.cpp.o
+.PHONY : objects/line.o
+
+# target to build an object file
+objects/line.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/line.cpp.o
+.PHONY : objects/line.cpp.o
+
+objects/line.i: objects/line.cpp.i
+.PHONY : objects/line.i
+
+# target to preprocess a source file
+objects/line.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/line.cpp.i
+.PHONY : objects/line.cpp.i
+
+objects/line.s: objects/line.cpp.s
+.PHONY : objects/line.s
+
+# target to generate assembly for a file
+objects/line.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/line.cpp.s
+.PHONY : objects/line.cpp.s
+
+objects/movable_text.o: objects/movable_text.cpp.o
+.PHONY : objects/movable_text.o
+
+# target to build an object file
+objects/movable_text.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/movable_text.cpp.o
+.PHONY : objects/movable_text.cpp.o
+
+objects/movable_text.i: objects/movable_text.cpp.i
+.PHONY : objects/movable_text.i
+
+# target to preprocess a source file
+objects/movable_text.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/movable_text.cpp.i
+.PHONY : objects/movable_text.cpp.i
+
+objects/movable_text.s: objects/movable_text.cpp.s
+.PHONY : objects/movable_text.s
+
+# target to generate assembly for a file
+objects/movable_text.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/movable_text.cpp.s
+.PHONY : objects/movable_text.cpp.s
+
+objects/object.o: objects/object.cpp.o
+.PHONY : objects/object.o
+
+# target to build an object file
+objects/object.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/object.cpp.o
+.PHONY : objects/object.cpp.o
+
+objects/object.i: objects/object.cpp.i
+.PHONY : objects/object.i
+
+# target to preprocess a source file
+objects/object.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/object.cpp.i
+.PHONY : objects/object.cpp.i
+
+objects/object.s: objects/object.cpp.s
+.PHONY : objects/object.s
+
+# target to generate assembly for a file
+objects/object.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/object.cpp.s
+.PHONY : objects/object.cpp.s
+
+objects/point_cloud.o: objects/point_cloud.cpp.o
+.PHONY : objects/point_cloud.o
+
+# target to build an object file
+objects/point_cloud.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/point_cloud.cpp.o
+.PHONY : objects/point_cloud.cpp.o
+
+objects/point_cloud.i: objects/point_cloud.cpp.i
+.PHONY : objects/point_cloud.i
+
+# target to preprocess a source file
+objects/point_cloud.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/point_cloud.cpp.i
+.PHONY : objects/point_cloud.cpp.i
+
+objects/point_cloud.s: objects/point_cloud.cpp.s
+.PHONY : objects/point_cloud.s
+
+# target to generate assembly for a file
+objects/point_cloud.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/point_cloud.cpp.s
+.PHONY : objects/point_cloud.cpp.s
+
+objects/point_cloud_renderable.o: objects/point_cloud_renderable.cpp.o
+.PHONY : objects/point_cloud_renderable.o
+
+# target to build an object file
+objects/point_cloud_renderable.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/point_cloud_renderable.cpp.o
+.PHONY : objects/point_cloud_renderable.cpp.o
+
+objects/point_cloud_renderable.i: objects/point_cloud_renderable.cpp.i
+.PHONY : objects/point_cloud_renderable.i
+
+# target to preprocess a source file
+objects/point_cloud_renderable.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/point_cloud_renderable.cpp.i
+.PHONY : objects/point_cloud_renderable.cpp.i
+
+objects/point_cloud_renderable.s: objects/point_cloud_renderable.cpp.s
+.PHONY : objects/point_cloud_renderable.s
+
+# target to generate assembly for a file
+objects/point_cloud_renderable.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/point_cloud_renderable.cpp.s
+.PHONY : objects/point_cloud_renderable.cpp.s
+
+objects/screw_visual.o: objects/screw_visual.cpp.o
+.PHONY : objects/screw_visual.o
+
+# target to build an object file
+objects/screw_visual.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/screw_visual.cpp.o
+.PHONY : objects/screw_visual.cpp.o
+
+objects/screw_visual.i: objects/screw_visual.cpp.i
+.PHONY : objects/screw_visual.i
+
+# target to preprocess a source file
+objects/screw_visual.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/screw_visual.cpp.i
+.PHONY : objects/screw_visual.cpp.i
+
+objects/screw_visual.s: objects/screw_visual.cpp.s
+.PHONY : objects/screw_visual.s
+
+# target to generate assembly for a file
+objects/screw_visual.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/screw_visual.cpp.s
+.PHONY : objects/screw_visual.cpp.s
+
+objects/shape.o: objects/shape.cpp.o
+.PHONY : objects/shape.o
+
+# target to build an object file
+objects/shape.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/shape.cpp.o
+.PHONY : objects/shape.cpp.o
+
+objects/shape.i: objects/shape.cpp.i
+.PHONY : objects/shape.i
+
+# target to preprocess a source file
+objects/shape.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/shape.cpp.i
+.PHONY : objects/shape.cpp.i
+
+objects/shape.s: objects/shape.cpp.s
+.PHONY : objects/shape.s
+
+# target to generate assembly for a file
+objects/shape.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/shape.cpp.s
+.PHONY : objects/shape.cpp.s
+
+objects/wrench_visual.o: objects/wrench_visual.cpp.o
+.PHONY : objects/wrench_visual.o
+
+# target to build an object file
+objects/wrench_visual.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/wrench_visual.cpp.o
+.PHONY : objects/wrench_visual.cpp.o
+
+objects/wrench_visual.i: objects/wrench_visual.cpp.i
+.PHONY : objects/wrench_visual.i
+
+# target to preprocess a source file
+objects/wrench_visual.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/wrench_visual.cpp.i
+.PHONY : objects/wrench_visual.cpp.i
+
+objects/wrench_visual.s: objects/wrench_visual.cpp.s
+.PHONY : objects/wrench_visual.s
+
+# target to generate assembly for a file
+objects/wrench_visual.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/objects/wrench_visual.cpp.s
+.PHONY : objects/wrench_visual.cpp.s
+
+ogre_logging.o: ogre_logging.cpp.o
+.PHONY : ogre_logging.o
+
+# target to build an object file
+ogre_logging.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/ogre_logging.cpp.o
+.PHONY : ogre_logging.cpp.o
+
+ogre_logging.i: ogre_logging.cpp.i
+.PHONY : ogre_logging.i
+
+# target to preprocess a source file
+ogre_logging.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/ogre_logging.cpp.i
+.PHONY : ogre_logging.cpp.i
+
+ogre_logging.s: ogre_logging.cpp.s
+.PHONY : ogre_logging.s
+
+# target to generate assembly for a file
+ogre_logging.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/ogre_logging.cpp.s
+.PHONY : ogre_logging.cpp.s
+
+orthographic.o: orthographic.cpp.o
+.PHONY : orthographic.o
+
+# target to build an object file
+orthographic.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/orthographic.cpp.o
+.PHONY : orthographic.cpp.o
+
+orthographic.i: orthographic.cpp.i
+.PHONY : orthographic.i
+
+# target to preprocess a source file
+orthographic.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/orthographic.cpp.i
+.PHONY : orthographic.cpp.i
+
+orthographic.s: orthographic.cpp.s
+.PHONY : orthographic.s
+
+# target to generate assembly for a file
+orthographic.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/orthographic.cpp.s
+.PHONY : orthographic.cpp.s
+
+render_system.o: render_system.cpp.o
+.PHONY : render_system.o
+
+# target to build an object file
+render_system.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/render_system.cpp.o
+.PHONY : render_system.cpp.o
+
+render_system.i: render_system.cpp.i
+.PHONY : render_system.i
+
+# target to preprocess a source file
+render_system.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/render_system.cpp.i
+.PHONY : render_system.cpp.i
+
+render_system.s: render_system.cpp.s
+.PHONY : render_system.s
+
+# target to generate assembly for a file
+render_system.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/render_system.cpp.s
+.PHONY : render_system.cpp.s
 
 render_window.o: render_window.cpp.o
 .PHONY : render_window.o
@@ -237,6 +837,54 @@ render_window.cpp.s:
 	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/render_window.cpp.s
 .PHONY : render_window.cpp.s
 
+resource_config.o: resource_config.cpp.o
+.PHONY : resource_config.o
+
+# target to build an object file
+resource_config.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/resource_config.cpp.o
+.PHONY : resource_config.cpp.o
+
+resource_config.i: resource_config.cpp.i
+.PHONY : resource_config.i
+
+# target to preprocess a source file
+resource_config.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/resource_config.cpp.i
+.PHONY : resource_config.cpp.i
+
+resource_config.s: resource_config.cpp.s
+.PHONY : resource_config.s
+
+# target to generate assembly for a file
+resource_config.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/resource_config.cpp.s
+.PHONY : resource_config.cpp.s
+
+viewport_projection_finder.o: viewport_projection_finder.cpp.o
+.PHONY : viewport_projection_finder.o
+
+# target to build an object file
+viewport_projection_finder.cpp.o:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/viewport_projection_finder.cpp.o
+.PHONY : viewport_projection_finder.cpp.o
+
+viewport_projection_finder.i: viewport_projection_finder.cpp.i
+.PHONY : viewport_projection_finder.i
+
+# target to preprocess a source file
+viewport_projection_finder.cpp.i:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/viewport_projection_finder.cpp.i
+.PHONY : viewport_projection_finder.cpp.i
+
+viewport_projection_finder.s: viewport_projection_finder.cpp.s
+.PHONY : viewport_projection_finder.s
+
+# target to generate assembly for a file
+viewport_projection_finder.cpp.s:
+	cd /workspace/autonomy/src/autoview/build && $(MAKE) $(MAKESILENT) -f autoview/rendering/CMakeFiles/autoview_rendering.dir/build.make autoview/rendering/CMakeFiles/autoview_rendering.dir/viewport_projection_finder.cpp.s
+.PHONY : viewport_projection_finder.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -251,12 +899,93 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... autoview_rendering_autogen"
 	@echo "... autoview_rendering"
+	@echo "... apply_visibility_bits.o"
+	@echo "... apply_visibility_bits.i"
+	@echo "... apply_visibility_bits.s"
 	@echo "... autoview_rendering_autogen/mocs_compilation.o"
 	@echo "... autoview_rendering_autogen/mocs_compilation.i"
 	@echo "... autoview_rendering_autogen/mocs_compilation.s"
+	@echo "... aviz_rendering.o"
+	@echo "... aviz_rendering.i"
+	@echo "... aviz_rendering.s"
+	@echo "... custom_parameter_indices.o"
+	@echo "... custom_parameter_indices.i"
+	@echo "... custom_parameter_indices.s"
+	@echo "... geometry.o"
+	@echo "... geometry.i"
+	@echo "... geometry.s"
+	@echo "... logging.o"
+	@echo "... logging.i"
+	@echo "... logging.s"
+	@echo "... logging_handler.o"
+	@echo "... logging_handler.i"
+	@echo "... logging_handler.s"
+	@echo "... material_manager.o"
+	@echo "... material_manager.i"
+	@echo "... material_manager.s"
+	@echo "... mesh_loader.o"
+	@echo "... mesh_loader.i"
+	@echo "... mesh_loader.s"
+	@echo "... objects/arrow.o"
+	@echo "... objects/arrow.i"
+	@echo "... objects/arrow.s"
+	@echo "... objects/axes.o"
+	@echo "... objects/axes.i"
+	@echo "... objects/axes.s"
+	@echo "... objects/billboard_line.o"
+	@echo "... objects/billboard_line.i"
+	@echo "... objects/billboard_line.s"
+	@echo "... objects/covariance_visual.o"
+	@echo "... objects/covariance_visual.i"
+	@echo "... objects/covariance_visual.s"
+	@echo "... objects/effort_visual.o"
+	@echo "... objects/effort_visual.i"
+	@echo "... objects/effort_visual.s"
+	@echo "... objects/grid.o"
+	@echo "... objects/grid.i"
+	@echo "... objects/grid.s"
+	@echo "... objects/line.o"
+	@echo "... objects/line.i"
+	@echo "... objects/line.s"
+	@echo "... objects/movable_text.o"
+	@echo "... objects/movable_text.i"
+	@echo "... objects/movable_text.s"
+	@echo "... objects/object.o"
+	@echo "... objects/object.i"
+	@echo "... objects/object.s"
+	@echo "... objects/point_cloud.o"
+	@echo "... objects/point_cloud.i"
+	@echo "... objects/point_cloud.s"
+	@echo "... objects/point_cloud_renderable.o"
+	@echo "... objects/point_cloud_renderable.i"
+	@echo "... objects/point_cloud_renderable.s"
+	@echo "... objects/screw_visual.o"
+	@echo "... objects/screw_visual.i"
+	@echo "... objects/screw_visual.s"
+	@echo "... objects/shape.o"
+	@echo "... objects/shape.i"
+	@echo "... objects/shape.s"
+	@echo "... objects/wrench_visual.o"
+	@echo "... objects/wrench_visual.i"
+	@echo "... objects/wrench_visual.s"
+	@echo "... ogre_logging.o"
+	@echo "... ogre_logging.i"
+	@echo "... ogre_logging.s"
+	@echo "... orthographic.o"
+	@echo "... orthographic.i"
+	@echo "... orthographic.s"
+	@echo "... render_system.o"
+	@echo "... render_system.i"
+	@echo "... render_system.s"
 	@echo "... render_window.o"
 	@echo "... render_window.i"
 	@echo "... render_window.s"
+	@echo "... resource_config.o"
+	@echo "... resource_config.i"
+	@echo "... resource_config.s"
+	@echo "... viewport_projection_finder.o"
+	@echo "... viewport_projection_finder.i"
+	@echo "... viewport_projection_finder.s"
 .PHONY : help
 
 

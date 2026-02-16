@@ -62,13 +62,13 @@ public:
   get_topic_names_and_types() const override;
 
   // TODO(wjwwood): think about a suitable way to extend the abstraction to also cover subscriptions
-  autolink::Node::SharedPtr get_raw_node() override
+  std::shared_ptr<autolink::Node> get_raw_node() override
   {
     return raw_node_;
   }
 
 private:
-  autolink::Node::SharedPtr raw_node_;
+  std::shared_ptr<autolink::Node> raw_node_;
 };  
 
 }  // namespace interaction

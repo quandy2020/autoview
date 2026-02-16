@@ -39,7 +39,7 @@ public:
   virtual std::map<std::string, std::vector<std::string>>
   get_topic_names_and_types() const = 0;
 
-  virtual autolink::Node::SharedPtr get_raw_node() = 0;
+  virtual std::shared_ptr<autolink::Node> get_raw_node() = 0;
 };
 
 }  // namespace interaction

@@ -24,7 +24,7 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 find_package(Qt REQUIRED COMPONENTS Widgets Core)
 find_package(Protobuf REQUIRED)
 find_package(Ogre REQUIRED)
-# find_package(Autolink REQUIRED)
+find_package(Autolink REQUIRED)
 
 set(AUTOVIEW_SOURCES autoview/main.cpp)
 
